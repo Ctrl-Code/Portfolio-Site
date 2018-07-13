@@ -1,0 +1,88 @@
+/*  
+    This CSS follows the strict alphabetical order for naming of CSS styling
+    elements and the order is as follows:
+    1.html elements,
+    2.ids,
+    3.classes,
+    4.media queries.
+*/
+
+body{
+    background-color: #7d97ad;
+}
+
+h2{
+    background-color: #c1d396;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.1em;
+}
+
+#full-display{
+    width: 100%;
+}
+
+#divider{
+    background-color: #2d3c49;
+    height: 5px;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#udacity-logo{
+    width: 98%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#margin-white{
+    padding: 0.5em;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 16% 84%;
+    background-color: #c1d396;
+}
+
+.grid-2{
+    background-color: #78d8f0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.1em;
+    margin-top: 0.3em;
+}
+
+.intro{
+    font-size: larger;
+    text-align: right;
+    box-sizing: content-box;
+    padding-top: 12%;
+    padding-right: 0.1em;
+}
+
+.img-sizing{
+    width: 100%;
+    margin: 0;
+}
+
+.text{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (max-width:390px){
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0.1em;
+        margin: 0.2em;
+    }
+}
